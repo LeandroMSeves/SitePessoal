@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "fonte";
+    src: url("friends.ttf"); /*Para os demais navegadores*/;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #F2F2F3;
+}
+
+.segundo{
+    background-image: url("img/fundo.jpg");
+    width: 960px;
+    height: 550px;
+    font-family: "fonte";
+    color: #DCDCDC;
+    text-align: center;
+    font-size: 100px;
+    margin: auto;
+}
+
+.logo{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+#titulo{
+    text-align: center;
+    text-decoration-line: underline;
+    font-style: oblique;
+    font-size: 25px;
+}
+
+#rodape{
+    position:relative;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    font-style:oblique;
+    font-size: 13px;
+}

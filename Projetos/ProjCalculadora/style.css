@@ -1,0 +1,54 @@
+body{
+    background-color: #F2F2F3;
+}
+
+#conteudo{
+    width: 85%;
+    margin: auto;
+}
+
+.tblpasso{
+    width: 400px;
+    padding-left: 30px;
+    color:#006400;
+}
+
+.tblpassodois{
+    width: 400px;
+    padding-left: 30px;
+    padding-top: 50%;
+    color:#006400;
+}
+
+.calculado{
+    text-align: center;
+    font-size: 25px;
+    color: #006400;
+    height: 90px;
+}
+
+.aviso{
+    color:red;
+}
+
+.logo{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+#titulo{
+    text-align: center;
+    text-decoration-line: underline;
+    font-style: oblique;
+    font-size: 25px;
+}
+
+#rodape{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    font-style:oblique;
+    font-size: 13px;
+}

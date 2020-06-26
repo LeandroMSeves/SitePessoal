@@ -1,0 +1,31 @@
+body{
+    background-color: #F2F2F3;
+}
+
+#titulo{
+    text-align: center;
+    text-decoration-line: underline;
+    font-style: oblique;
+    font-size: 25px;
+}
+
+.logo{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+
+#conteudo{
+    width: 60%;
+    margin: auto;
+}
+
+#rodape{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    font-style:oblique;
+    font-size: 13px;
+}

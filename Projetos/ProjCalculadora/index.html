@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang=”pt-br”>
+<head>
+<!-- HTML 4 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- HTML5 -->
+<meta charset="utf-8"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <title>Projeto de Calculadora de 12 funções</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+    
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="logo" class="logo">
+	<a href="http://www.lmsinfo.com.br" target="_blank">
+            		<img src="img/logo.jpg" alt="Logo preto, escrito a url: www.lmsinfo.com.br">
+	</a>
+            </div>
+            <div id="titulo" class="alert alert-dark" role="alert">
+                Projeto - Calculadora de 12 funções
+            </div>
+            
+            <div id="conteudo">
+                <form id="formulario" name="formulario">
+                    <table id="tabela" name="tabela" class="table table-borderless">
+                    <tr>
+                        <td>1º Valor: </td>
+                        <td><input type="text" id="valorum" name="valorum" onblur="passo2()"></td>   
+                        <td class="tblpasso">1º Passo - Digite o primeiro valor!</td>   
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="radio" id="operacao" name="operacao" value="Soma" onclick="habilitar()"> Soma
+                            <input type="radio" id="operacao" name="operacao" value="Subtração" onclick="habilitar()"> Subtração
+                            <input type="radio" id="operacao" name="operacao" value="Multiplicação" onclick="habilitar()"> Multiplicação
+                            <input type="radio" id="operacao" name="operacao" value="Divisão" onclick="habilitar()"> Divisão
+                            
+                        </td>   
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="radio" id="operacao" name="operacao" value="√" onclick="desabilitar()"> Raiz
+                            <input type="radio" id="operacao" name="operacao" value="Percentagem" onclick="habilitar()"> Percentagem
+                            <input type="radio" id="operacao" name="operacao" value="Quadrado X²" onclick="desabilitar()"> X²
+                            <input type="radio" id="operacao" name="operacao" value="X elevado Y" onclick="habilitar()"> X elevado Y
+                        </td>        
+                        <td rowspan="2" class="tblpassodois"><span id="passodois"></span></td>   
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            
+                            <input type="radio" id="operacao" name="operacao" value="Seno" onclick="desabilitar()"> Seno
+                            <input type="radio" id="operacao" name="operacao" value="Coseno" onclick="desabilitar()"> Conseno
+                            <input type="radio" id="operacao" name="operacao" value="Tangente" onclick="desabilitar()"> Tangente
+                            <input type="radio" id="operacao" name="operacao" value="Log" onclick="desabilitar()"> Log
+                        </td>      
+                      
+                    </tr>
+                    <tr>
+                        <td>2º Valor: </td>
+                        <td><input type="text" id="valordois" name="valordois" disabled></td>   
+                        <td class="tblpasso"><span id="passotres"></span></td>  
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <center>
+                            <input type="button" id="calcular" name="calcular" value="Calcular" class="btn btn-secondary" onclick="calculo()">
+                            <input type="reset" id="apagar" name="apagar" value="Apagar" class="btn btn-secondary">
+                            </center>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"  class="calculado">
+                            <span id="calculado"></span>
+                        </td>  
+                        <td class="tblpasso"><span id="passoquatro"></span></td>
+                    </tr>
+                    
+                    </table>
+                </form>
+            </div>
+            <div id="rodape" class="card-footer">Desenvolvido por: Leandro Moreno Seves - <a href="http://www.lmsinfo.com.br" target="_blank">www.lmsinfo.com.br</a> - Projeto Conversão Monetária
+            </div>
+        </div>
+    </body>
+    
+    
+</html>

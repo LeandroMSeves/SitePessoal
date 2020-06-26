@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang=”pt-br”>
+<head>
+<!-- HTML 4 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- HTML5 -->
+<meta charset="utf-8"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <title>Projeto Simulador de bomba de combustível</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+    
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="logo" class="logo">
+	<a href="http://www.lmsinfo.com.br" target="_blank">
+            		<img src="img/logo.jpg" alt="Logo preto, escrito a url: www.lmsinfo.com.br">
+	</a>
+            </div>
+            <div id="titulo" class="alert alert-dark" role="alert">
+                Projeto - Simulador de bomba de combustível
+            </div>
+            
+            <div id="formulario">
+                
+                <form id="form" name="form">
+                    <table id="tabela" class="table table-hover">
+                    <tbody>
+                    <tr>
+                        <td><label>R$ Combustível:</label></td>
+                        <td><input type="text" id="vcombustivel"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Base de Cálculo: </label></td>
+                        <td>
+                        <input type="radio" id="forma" name="forma" value="litro" onclick="habilitarlitro()" checked> Litro(s) 
+                    <input type="radio" id="forma" name="forma" value="valor" onclick="habilitarvalor()">Valor à Pagar
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Qtd. Litro(s):</label></td>
+                        <td><input type="text" id="qlitro"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Valor(s) em R$:</label></td>
+                        <td><input type="text" id="qvalor" disabled></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="centralizar">
+                            <input type="button" id="enviar" value="Calcular" onclick="calcular()" class="btn btn-secondary">
+                            <input type="reset" id="enviar" value="Limpar" class="btn btn-secondary">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                </form>
+                
+            </div>
+            <div id="analise" class="alert alert-success" role="alert">
+                <label id="txtres">O resultado é: </label> <span id="resultado"></span>
+            </div>
+                        <div id="rodape" class="card-footer">
+            Desenvolvido por: Leandro Moreno Seves - <a href="http://www.lmsinfo.com.br">www.lmsinfo.com.br</a> - Projeto Conversão Monetária
+            </div>
+        </div>
+    </body>
+</html>

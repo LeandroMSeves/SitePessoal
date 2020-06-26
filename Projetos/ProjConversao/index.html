@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang=”pt-br”>
+<head>
+<!-- HTML 4 -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- HTML5 -->
+<meta charset="utf-8"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <title>Projeto de Conversão Monterária</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="logo" class="logo">
+	<a href="http://www.lmsinfo.com.br" target="_blank">
+            		<img src="img/logo.jpg" alt="Logo preto, escrito a url: www.lmsinfo.com.br">
+	</a>
+            </div>
+            <div id="titulo" class="alert alert-dark" role="alert">
+                Projeto - Conversão Monetária
+            </div>
+            
+         <div id="valor" class="valor">  
+            <form id="formulario">
+             <table class="table table-hover">
+              <tbody>
+                <tr>
+                  <td><label>Entre com o <u>valor</u> em real - R$</label></td>
+                  <td><input type="text" id="valorinicial"></td>
+                </tr>
+                <tr>
+                  <td><label>Escolha a moeda de conversão:</label></td>
+                  <td>
+                    <select id="opcoes">
+                        <option>selecione uma moeda</option>
+                        <option value="dol">Dólar US$</option>
+                        <option value="eur">Euro €</option>
+                        <option value="pes">Peso $</option>
+                        <option value="lib">Libra $</option>
+                        <option value="yua">Yuan ¥</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                      <center>
+                        <input type="button" value="Converter" id="env" onclick="converter()"  class="btn btn-secondary">
+                        <input type="reset" value="Limpar" id="apg"  class="btn btn-secondary">
+                      </center>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </form>
+
+            </div>
+            <p></p>
+            <div id="resultado"  class="alert alert-success" role="alert">
+                <label id="txtresultado">O valor convertido é:</label>
+                <span id="valorconvertido"></span>
+            </div>
+            <div id="obs" class="obs">
+                <ul>
+                    <li>Os valores cotacionados, são referentes ao dia 24/06/2020 - 18:30</li>
+				    <li>O cálculo efetuado tem caráter informativo e não substitui as disposições da norma cambial  brasileira.</li>				
+				    <span id="datahora"></span>
+                </ul>
+            </div>
+            <!--- Nova Estapa -->
+            <div id="rodape" class="card-footer">
+            Desenvolvido por: Leandro Moreno Seves - <a href="http://www.lmsinfo.com.br" target="_blank">www.lmsinfo.com.br</a> - Projeto Conversão Monetária
+            </div>
+            <!--- Nova Estapa -->
+        </div>
+    </body>
+</html>
